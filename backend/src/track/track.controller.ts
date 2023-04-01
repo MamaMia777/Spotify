@@ -10,7 +10,7 @@ export class TrackController {
 
     @Get()
     get() {
-        return 'Hellow'
+        return 'Hello'
     }
     // @Post()
     // @UseInterceptors(FileFieldsInterceptor([
