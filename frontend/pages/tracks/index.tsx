@@ -5,7 +5,6 @@ import { NextThunkDispatch, wrapper } from "@/store";
 import { fetchTracks, searchTracks } from "@/store/actions-creators/track";
 import { ITrack, TrackActionTypes } from "@/types/track";
 import { Box, Button, Card, Grid, TextField } from "@mui/material";
-import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";

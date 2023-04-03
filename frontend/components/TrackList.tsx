@@ -5,15 +5,16 @@ import { useTypedSelector } from "@/hooks/useTypedSelector"
 
 interface ITrackListProps {
     tracks: ITrack[],
-    deleteTrackFromList: (id: number) => void
+    deleteTrackFromList: (id: number) => void,
+    type?: number,
+    addTrackToAlbum?: (trackId: number) => void
 }
 
-const TrackList: React.FC<ITrackListProps> = ({ tracks, deleteTrackFromList }) => {
-    const { active } = useTypedSelector(state => state.player)
+const TrackList: React.FC<ITrackListProps> = ({ tracks, deleteTrackFromList, type, addTrackToAlbum }) => {
     return (
         <Grid container direction="column">
             <Box p={2}>
-                {tracks.length > 0 ? (tracks.map(track => <TrackItem key={track.id} track={track} deleteTrackFromList={deleteTrackFromList} />)) : (
+                {tracks.length > 0 ? (tracks.map(track => <TrackItem key={track.id} track={track} type={type} deleteTrackFromList={deleteTrackFromList} addTrackToAlbum={addTrackToAlbum} />)) : (
                     <p style={{ textAlign: 'center' }}>Нету песень...</p>
                 )}
 
