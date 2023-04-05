@@ -24,7 +24,7 @@ const TrackItem: React.FC<ITrackItemProps> = ({ track, deleteTrackFromList, type
     const currentlyIsPlaying = active?.id === track.id && !pause
     const deleteTrack = async () => {
         try {
-            const resp = await axios.delete(`http://localhost:5000/tracks/${track.id}`)
+            const resp = await axios.delete(`http://localhost:5000/api/tracks/${track.id}`)
             deleteTrackFromList(track.id)
         } catch (e) {
             console.log(e)
