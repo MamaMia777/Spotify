@@ -19,7 +19,7 @@ const AlbumCard: React.FC<IAlbumCardProps> = ({ album, deleteAlbumFromList }) =>
             <CardMedia
                 component="img"
                 height="194"
-                image={'https://i1.sndcdn.com/artworks-000234704724-ymkl6w-t500x500.jpg'}
+                image={'http://localhost:5000/' + album.picture}
                 alt={'1'}
             />
             <CardContent>
