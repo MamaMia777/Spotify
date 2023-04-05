@@ -3,6 +3,8 @@ interface ITrackProgress {
     right: number
     onChange: (e: any) => void
 }
+const {log} = console
+log(123)
 
 const TrackProgress: React.FC<ITrackProgress> = ({ left, right, onChange }) => {
     return (

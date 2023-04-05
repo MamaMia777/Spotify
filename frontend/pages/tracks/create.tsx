@@ -25,7 +25,7 @@ const Create = () => {
             formData.append('artist', artist.value)
             formData.append('picture', picture!)
             formData.append('audio', audio!)
-            axios.post('http://localhost:5000/tracks', formData)
+            axios.post('http://localhost:5000/api/tracks', formData)
                 .then(resp => router.push('/tracks'))
                 .catch(e => console.log(e))
         }
