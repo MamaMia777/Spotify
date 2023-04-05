@@ -7,7 +7,7 @@ const MainLayout: React.FC<{ children: JSX.Element }> = ({ children }) => {
     return (
         <>
             <Head>
-                <title>Список музыки</title>
+                <title>Music</title>
                 <meta name="111" />
             </Head>
 
