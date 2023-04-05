@@ -41,7 +41,7 @@ const TrackMainPage = () => {
                 <Card style={{ width: '900px' }}>
                     <Box p={3}>
                         <Grid container justifyContent='space-between'>
-                            <h1>Список треков</h1>
+                            <h1>Track's list</h1>
                             <Button variant="outlined" onClick={() => router.push('/tracks/create')}>Загрузить</Button>
                         </Grid>
                     </Box>
