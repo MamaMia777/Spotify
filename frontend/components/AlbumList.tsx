@@ -41,7 +41,7 @@ const AlbumCard: React.FC<IAlbumCardProps> = ({ album, deleteAlbumFromList }) =>
 }
 const AlbumList: React.FC<IAlbumListProps> = ({ albums, deleteAlbumFromList }) => {
     if (albums.length === 0) return (
-        <div>Нету альбомов</div>
+        <div>No albums...</div>
     )
     return (
         <Grid container spacing={4} p={3}>

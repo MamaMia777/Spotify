@@ -34,12 +34,12 @@ const Create = () => {
                                 label={"Название альбома"}
                             />
                             <FileUpload setFile={setPicture} accept="image/*">
-                                <Button variant="outlined">Загрузить обложку</Button>
+                                <Button variant="outlined">Upload avatar</Button>
                             </FileUpload>
                         </Grid>
 
                         <Grid container justifyContent={'center'}>
-                            <Button variant="outlined" onClick={send}>Создать</Button>
+                            <Button variant="outlined" onClick={send}>Create</Button>
                         </Grid>
                     </Card>
 

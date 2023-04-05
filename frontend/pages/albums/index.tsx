@@ -47,8 +47,8 @@ const AlbumPage = () => {
                 <Card style={{ width: '900px' }}>
                     <Box p={3}>
                         <Grid container justifyContent='space-between'>
-                            <h1>Список Альбомов</h1>
-                            <Button variant="outlined" onClick={() => router.push('/albums/create')}>Создать</Button>
+                            <h1>Albums</h1>
+                            <Button variant="outlined" onClick={() => router.push('/albums/create')}>Create</Button>
                         </Grid>
                     </Box>
                     <TextField

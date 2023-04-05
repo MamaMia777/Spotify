@@ -46,17 +46,17 @@ const Create = () => {
                                 <TextField
                                     {...name}
                                     style={{ marginTop: '10px' }}
-                                    label={"Название трека"}
+                                    label={"Track title"}
                                 />
                                 <TextField
                                     {...artist}
                                     style={{ marginTop: '10px' }}
-                                    label={"Имя исполнителя"}
+                                    label={"Name of author"}
                                 />
                                 <TextField
                                     {...text}
                                     style={{ marginTop: '10px' }}
-                                    label={"Слова к треку"}
+                                    label={"Song words"}
                                     multiline
                                     rows={3}
                                 />
@@ -65,18 +65,18 @@ const Create = () => {
                         {activeStep === 1 && <FileUpload setFile={setPicture} accept="image/*">
                             <>
                                 {picture && <p>DONE !</p>}
-                                <Button variant="outlined">Загрузить обложку</Button>
+                                <Button variant="outlined">Upload avatar image</Button>
                             </>
 
                         </FileUpload>}
                         {activeStep === 2 && <FileUpload setFile={setAudio} accept="audio/*">
-                            <Button variant="outlined">Загрузить аудио</Button>
+                            <Button variant="outlined">Upload audio file</Button>
                         </FileUpload>}
                     </>
                 </StepWrapper>
                 <Grid container justifyContent={'space-between'}>
-                    <Button onClick={back}>Назад</Button>
-                    <Button onClick={next}>Вперед</Button>
+                    <Button onClick={back}>Next</Button>
+                    <Button onClick={next}>Back</Button>
                 </Grid>
             </>
         </MainLayout>

@@ -22,9 +22,9 @@ import Album from "@mui/icons-material/Album"
 
 const menuItems = [
 
-    { text: 'Главная', href: '/' },
-    { text: 'Список треков', href: '/tracks' },
-    { text: 'Список Альбомов', href: '/albums' }
+    { text: 'Home', href: '/' },
+    { text: 'Tracks', href: '/tracks' },
+    { text: 'Albums', href: '/albums' }
 
 ]
 
